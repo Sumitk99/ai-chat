@@ -6,6 +6,16 @@
   background-color: #0F0F0F;
   padding: 10px;
 }
+.ai-name {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  min-width: 100%;
+  //background-color: #1e1e1e;
+  font-size: 25px;
+  font-weight: 370;
+  color: white;
+}
 
 .chat-input-container {
   display: flex;
