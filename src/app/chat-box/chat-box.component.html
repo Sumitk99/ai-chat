@@ -7,7 +7,9 @@
       class="message"
       [ngClass]="{ 'user': msg.role === 'user', 'assistant': msg.role === 'assistant' }"
     >
-      {{ msg.content }}
+      {{msg.content}}
+<!--      <div *ngIf="msg.role === 'user'">{{ msg.content }}</div>-->
+<!--      <markdown *ngIf="msg.role === 'assistant'" [data]="msg.content"></markdown>-->
     </div>
   </div>
 

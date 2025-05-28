@@ -15,7 +15,8 @@ import {Router} from '@angular/router';
 import {MatSnackBar} from '@angular/material/snack-bar';
 import {HttpClientModule} from '@angular/common/http';
 import {HttpClient} from '@angular/common/http';
-import {NgClass, NgForOf} from '@angular/common';
+import {NgClass, NgForOf, NgIf} from '@angular/common';
+import {MarkdownComponent} from 'ngx-markdown';
 
 interface ChatMessage {
   role: 'user' | 'assistant';
@@ -33,6 +34,8 @@ interface ChatMessage {
     HttpClientModule,
     NgClass,
     NgForOf,
+    MarkdownComponent,
+    NgIf,
 
   ],
   templateUrl: './chat-box.component.html',
