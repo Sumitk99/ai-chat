@@ -1,0 +1,24 @@
+.chat-box-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 100vh;
+  background-color: #0F0F0F;
+  padding: 10px;
+}
+
+.chat-input-container {
+  display: flex;
+  align-items: baseline;
+  padding: 8px;
+  padding-bottom: 0px;
+  margin-bottom: 20px;
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  margin-top: auto; // Pushes to the bottom
+}
+
+.chat-input {
+  flex: 1;
+  margin-right: 8px;
+}

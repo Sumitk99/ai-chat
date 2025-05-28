@@ -81,7 +81,7 @@ export class LoginComponent {
       next: (response) => {
         this.authService.login(response.JWT_Token, response.Refresh_Token, response.account);
         this.loading = false;
-        // this.router.navigate(['/']);
+        this.router.navigate(['/chat']);
       },
       error: (err) => {
         this.error = err.error?.message || 'Login failed. Please check your credentials.';

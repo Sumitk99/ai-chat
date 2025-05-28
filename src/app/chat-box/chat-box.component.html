@@ -1,0 +1,21 @@
+<div class="chat-box-container">
+  <div class="chat-input-container">
+    <mat-form-field class="chat-input" appearance="outline">
+      <input
+        matInput
+        placeholder="Type a message..."
+        [(ngModel)]="message"
+        (keyup.enter)="onSend()"
+      />
+    </mat-form-field>
+
+    <button
+      mat-icon-button
+      color="primary"
+      (click)="onSend()"
+      [disabled]="!message.trim()"
+    >
+      <mat-icon>send</mat-icon>
+    </button>
+  </div>
+</div>
