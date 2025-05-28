@@ -1,6 +1,16 @@
 <div class="chat-box-container">
   <div class="ai-name">{{ aiName }}</div>
 
+  <div class="chat-messages" #chatContainer>
+    <div
+      *ngFor="let msg of chatMessages"
+      class="message"
+      [ngClass]="{ 'user': msg.role === 'user', 'assistant': msg.role === 'assistant' }"
+    >
+      {{ msg.content }}
+    </div>
+  </div>
+
   <div class="chat-input-container">
     <mat-form-field class="chat-input" appearance="outline">
       <input

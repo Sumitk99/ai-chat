@@ -17,6 +17,37 @@
   color: white;
 }
 
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  margin-top: 60px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.message {
+  max-width: 70%;
+  padding: 10px 15px;
+  border-radius: 16px;
+  font-size: 16px;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+.message.user {
+  align-self: flex-end;
+  background-color: #1976d2;
+  color: white;
+}
+
+.message.assistant {
+  align-self: flex-start;
+  background-color: #2e2e2e;
+  color: white;
+}
+
 .chat-input-container {
   display: flex;
   align-items: baseline;
